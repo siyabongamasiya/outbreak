@@ -10,6 +10,17 @@ React, TypeScript, Vite, and Recharts.
 See the [project definition document](https://drive.google.com/file/d/1d7CXnbBOLAtzSXCV6pLvuZm2foK6Mi-v/view?usp=sharing)
 for the project user stories, user journey, and technology stack.
 
+## Technology Stack and Libraries
+
+- **React 19 and React DOM** for the user interface.
+- **TypeScript** for typed application code.
+- **Recharts** for the interactive time-series charts.
+- **Lucide React** for interface icons.
+- **Tailwind CSS 4** for utility-first styling, integrated through the Vite
+  plugin.
+- **Vite** for local development and production builds.
+- **ESLint** for code linting.
+
 ## Live Services
 
 - Frontend: [outbreak-wala.onrender.com](https://outbreak-wala.onrender.com)
