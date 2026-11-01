@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Activity,
   ArrowDownRight,
@@ -27,8 +27,6 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import covidRecords from "./data/covid.json";
-
 type ViewKey = "confirmed" | "daily" | "outcomes" | "active";
 type RangeKey = "all" | "30";
 
@@ -51,6 +49,30 @@ type DataPoint = {
   recovered: number;
   active: number;
   dailyDeaths: number;
+};
+
+const isNumericValue = (value: unknown): value is string | number =>
+  (typeof value === "number" && Number.isFinite(value)) ||
+  (typeof value === "string" &&
+    value.trim().length > 0 &&
+    Number.isFinite(Number(value.replace(/[\s,]/g, ""))));
+
+const isRawRecord = (value: unknown): value is RawRecord => {
+  if (typeof value !== "object" || value === null) return false;
+
+  const record = value as Record<string, unknown>;
+
+  return (
+    typeof record.Date === "string" &&
+    [
+      record["Total Confirmed Cases"],
+      record["Total Deaths"],
+      record["Total Recovered"],
+      record["Active Cases"],
+      record["Daily Confirmed Cases"],
+      record["Daily  deaths"],
+    ].every(isNumericValue)
+  );
 };
 
 const normalizeValue = (value: string | number): number =>
@@ -83,9 +105,22 @@ const formatShortDate = (value: Date): string =>
     month: "short",
   }).format(value);
 
-const buildData = (): DataPoint[] =>
-  (covidRecords as RawRecord[]).map((record) => {
+const buildData = (payload: unknown): DataPoint[] => {
+  if (!Array.isArray(payload) || payload.length < 2) {
+    throw new Error("The COVID-19 endpoint must return at least two records.");
+  }
+
+  return payload.map((value, index) => {
+    if (!isRawRecord(value)) {
+      throw new Error(`The COVID-19 endpoint returned an invalid record at index ${index}.`);
+    }
+
+    const record = value;
     const dateValue = toDateValue(record.Date);
+
+    if (Number.isNaN(dateValue.getTime())) {
+      throw new Error(`The COVID-19 endpoint returned an invalid date at index ${index}.`);
+    }
 
     return {
       date: formatFullDate(dateValue),
@@ -98,6 +133,7 @@ const buildData = (): DataPoint[] =>
       dailyDeaths: normalizeValue(record["Daily  deaths"]),
     };
   });
+};
 
 const chartMeta: Record<
   ViewKey,
@@ -205,26 +241,68 @@ const tabs = [
 const defaultRange = "all";
 
 function App() {
-  const data = useMemo(() => buildData(), []);
+  const [data, setData] = useState<DataPoint[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [reloadKey, setReloadKey] = useState(0);
   const [selectedView, setSelectedView] = useState<ViewKey>("confirmed");
   const [range, setRange] = useState<RangeKey>(defaultRange);
 
+  useEffect(() => {
+    const controller = new AbortController();
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.replace(/\/+$/, "") ?? "";
+
+    const loadData = async () => {
+      setIsLoading(true);
+      setLoadError(null);
+
+      try {
+        const response = await fetch(`${apiBaseUrl}/api/covid`, {
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Failed to load COVID-19 data (HTTP ${response.status}).`);
+        }
+
+        const records: unknown = await response.json();
+        setData(buildData(records));
+      } catch (error) {
+        if (controller.signal.aborted) return;
+
+        setLoadError(
+          error instanceof Error
+            ? error.message
+            : "An unexpected error occurred while loading COVID-19 data.",
+        );
+      } finally {
+        if (!controller.signal.aborted) setIsLoading(false);
+      }
+    };
+
+    void loadData();
+    return () => controller.abort();
+  }, [reloadKey]);
+
+  const hasData = data.length >= 2;
   const selectedData = range === "all" ? data : data.slice(-30);
-  const latestData = data[data.length - 1];
+  const latestData = hasData ? data[data.length - 1] : null;
+  const currentPoint = selectedData[selectedData.length - 1];
 
   const chartTitle = chartMeta[selectedView];
 
   const latestTotalValue =
     selectedView === "confirmed"
-      ? selectedData[selectedData.length - 1].confirmed
+      ? currentPoint?.confirmed ?? 0
       : selectedView === "daily"
-        ? selectedData[selectedData.length - 1].daily
+        ? currentPoint?.daily ?? 0
         : selectedView === "outcomes"
-          ? selectedData[selectedData.length - 1].recovered
-          : selectedData[selectedData.length - 1].active;
+          ? currentPoint?.recovered ?? 0
+          : currentPoint?.active ?? 0;
 
-  const highestDailyRise = selectedData.reduce((max, item) =>
-    item.daily > max.daily ? item : max,
+  const highestDailyRise = selectedData.reduce<DataPoint | null>(
+    (max, item) => (max === null || item.daily > max.daily ? item : max),
+    null,
   );
 
   const renderChart = () => {
@@ -558,47 +636,63 @@ function App() {
             </p>
           </section>
 
-          <section className="summary-grid" aria-label="Latest statistics">
-            {cardMeta.map(({ key, label, icon: Icon, iconBg, iconColor }) => {
-              const previousValue = data[data.length - 2][key];
-              const currentValue = latestData[key];
-              const change =
-                previousValue === 0
-                  ? 0
-                  : ((currentValue - previousValue) / previousValue) * 100;
-              const isPositive = change >= 0;
+          {isLoading && (
+            <div className="data-message" role="status">
+              Loading COVID-19 data…
+            </div>
+          )}
+          {loadError && (
+            <div className="data-message data-message--error" role="alert">
+              <span>{loadError}</span>
+              <button type="button" onClick={() => setReloadKey((key) => key + 1)}>
+                Try again
+              </button>
+            </div>
+          )}
 
-              return (
-                <article className="summary-card" key={key}>
-                  <div
-                    className="summary-card__icon"
-                    style={{ background: iconBg }}
-                  >
-                    <Icon size={18} color={iconColor} strokeWidth={2.2} />
-                  </div>
-                  <div className="summary-card__content">
-                    <div className="summary-card__label">{label}</div>
-                    <div className="summary-card__value">
-                      {formatNumber(currentValue)}
-                    </div>
-                  </div>
-                  <div
-                    className={`summary-card__badge ${isPositive ? "is-positive" : "is-negative"}`}
-                    aria-label={`${label} change ${change >= 0 ? "up" : "down"}`}
-                  >
-                    {isPositive ? (
-                      <ArrowUpRight size={12} strokeWidth={2.2} />
-                    ) : (
-                      <ArrowDownRight size={12} strokeWidth={2.2} />
-                    )}
-                    {`${isPositive ? "+" : ""}${change.toFixed(1)}%`}
-                  </div>
-                </article>
-              );
-            })}
-          </section>
+          {!isLoading && !loadError && latestData && highestDailyRise && (
+            <>
+              <section className="summary-grid" aria-label="Latest statistics">
+                {cardMeta.map(({ key, label, icon: Icon, iconBg, iconColor }) => {
+                  const previousValue = data[data.length - 2][key];
+                  const currentValue = latestData[key];
+                  const change =
+                    previousValue === 0
+                      ? 0
+                      : ((currentValue - previousValue) / previousValue) * 100;
+                  const isPositive = change >= 0;
 
-          <section className="dashboard-panel" aria-label="COVID-19 dashboard">
+                  return (
+                    <article className="summary-card" key={key}>
+                      <div
+                        className="summary-card__icon"
+                        style={{ background: iconBg }}
+                      >
+                        <Icon size={18} color={iconColor} strokeWidth={2.2} />
+                      </div>
+                      <div className="summary-card__content">
+                        <div className="summary-card__label">{label}</div>
+                        <div className="summary-card__value">
+                          {formatNumber(currentValue)}
+                        </div>
+                      </div>
+                      <div
+                        className={`summary-card__badge ${isPositive ? "is-positive" : "is-negative"}`}
+                        aria-label={`${label} change ${change >= 0 ? "up" : "down"}`}
+                      >
+                        {isPositive ? (
+                          <ArrowUpRight size={12} strokeWidth={2.2} />
+                        ) : (
+                          <ArrowDownRight size={12} strokeWidth={2.2} />
+                        )}
+                        {`${isPositive ? "+" : ""}${change.toFixed(1)}%`}
+                      </div>
+                    </article>
+                  );
+                })}
+              </section>
+
+              <section className="dashboard-panel" aria-label="COVID-19 dashboard">
             <aside className="dashboard-sidebar">
               <div className="sidebar__block">
                 <div className="sidebar__eyebrow">Explore data</div>
@@ -684,10 +778,12 @@ function App() {
             </div>
           </section>
 
-          <footer className="page-footer">
-            <span>COVID-19 South Africa dataset · 05 Mar — 12 Jun 2020</span>
-            <span>Designed for clarity, not clinical use</span>
-          </footer>
+              <footer className="page-footer">
+                <span>COVID-19 South Africa dataset · 05 Mar — 12 Jun 2020</span>
+                <span>Designed for clarity, not clinical use</span>
+              </footer>
+            </>
+          )}
         </div>
       </main>
     </>

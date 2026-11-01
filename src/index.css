@@ -126,6 +126,34 @@ button:focus-visible {
   width: 100%;
 }
 
+.data-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--navy);
+}
+
+.data-message--error {
+  border-color: #efc3ba;
+  color: #8c3429;
+}
+
+.data-message button {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--navy);
+  color: white;
+  font-weight: 600;
+}
+
 .intro {
   padding: 52px 0 34px;
   display: flex;
