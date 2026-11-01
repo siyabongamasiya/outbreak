@@ -250,7 +250,10 @@ function App() {
 
   useEffect(() => {
     const controller = new AbortController();
-    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.replace(/\/+$/, "") ?? "";
+    const apiBaseUrl = (
+      import.meta.env.VITE_API_BASE_URL ||
+      (import.meta.env.DEV ? "" : "https://outbreak-backend-t2wx.onrender.com")
+    ).replace(/\/+$/, "");
 
     const loadData = async () => {
       setIsLoading(true);
