@@ -5,6 +5,11 @@ the outbreak, from 5 March to 12 June 2020. It displays case totals and trends
 from the project's COVID-19 time-series dataset. The dashboard is built with
 React, TypeScript, Vite, and Recharts.
 
+## Project Definition
+
+See the [project definition document](https://drive.google.com/file/d/1d7CXnbBOLAtzSXCV6pLvuZm2foK6Mi-v/view?usp=sharing)
+for the project user stories, user journey, and technology stack.
+
 ## Live Services
 
 - Frontend: [outbreak-wala.onrender.com](https://outbreak-wala.onrender.com)
