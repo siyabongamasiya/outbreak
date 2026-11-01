@@ -1,0 +1,902 @@
+[
+  {
+    "Date": "2020/03/05",
+    "Total Confirmed Cases": "45",
+    "Total Deaths": "1",
+    "Total Recovered": "6",
+    "Active Cases": "38",
+    "Daily Confirmed Cases": "18",
+    "Daily  deaths": 1
+  },
+  {
+    "Date": "2020/03/06",
+    "Total Confirmed Cases": "154",
+    "Total Deaths": "5",
+    "Total Recovered": "31",
+    "Active Cases": "118",
+    "Daily Confirmed Cases": "31",
+    "Daily  deaths": 1
+  },
+  {
+    "Date": "2020/03/07",
+    "Total Confirmed Cases": "329",
+    "Total Deaths": "11",
+    "Total Recovered": "80",
+    "Active Cases": "238",
+    "Daily Confirmed Cases": "49",
+    "Daily  deaths": 1
+  },
+  {
+    "Date": "2020/03/08",
+    "Total Confirmed Cases": "542",
+    "Total Deaths": "18",
+    "Total Recovered": "146",
+    "Active Cases": "378",
+    "Daily Confirmed Cases": "68",
+    "Daily  deaths": 2
+  },
+  {
+    "Date": "2020/03/09",
+    "Total Confirmed Cases": "784",
+    "Total Deaths": "26",
+    "Total Recovered": "226",
+    "Active Cases": "532",
+    "Daily Confirmed Cases": "89",
+    "Daily  deaths": 2
+  },
+  {
+    "Date": "2020/03/10",
+    "Total Confirmed Cases": "1050",
+    "Total Deaths": "33",
+    "Total Recovered": "319",
+    "Active Cases": "698",
+    "Daily Confirmed Cases": "111",
+    "Daily  deaths": 2
+  },
+  {
+    "Date": "2020/03/11",
+    "Total Confirmed Cases": "1338",
+    "Total Deaths": "42",
+    "Total Recovered": "423",
+    "Active Cases": "873",
+    "Daily Confirmed Cases": "134",
+    "Daily  deaths": 2
+  },
+  {
+    "Date": "2020/03/12",
+    "Total Confirmed Cases": "1644",
+    "Total Deaths": "50",
+    "Total Recovered": "538",
+    "Active Cases": "1056",
+    "Daily Confirmed Cases": "157",
+    "Daily  deaths": 3
+  },
+  {
+    "Date": "2020/03/13",
+    "Total Confirmed Cases": "1967",
+    "Total Deaths": "59",
+    "Total Recovered": "663",
+    "Active Cases": "1245",
+    "Daily Confirmed Cases": "181",
+    "Daily  deaths": 3
+  },
+  {
+    "Date": "2020/03/14",
+    "Total Confirmed Cases": "2307",
+    "Total Deaths": "69",
+    "Total Recovered": "798",
+    "Active Cases": "1440",
+    "Daily Confirmed Cases": "206",
+    "Daily  deaths": 3
+  },
+  {
+    "Date": "2020/03/15",
+    "Total Confirmed Cases": "2661",
+    "Total Deaths": "78",
+    "Total Recovered": "941",
+    "Active Cases": "1642",
+    "Daily Confirmed Cases": "231",
+    "Daily  deaths": 4
+  },
+  {
+    "Date": "2020/03/16",
+    "Total Confirmed Cases": "3028",
+    "Total Deaths": "88",
+    "Total Recovered": "1093",
+    "Active Cases": "1847",
+    "Daily Confirmed Cases": "257",
+    "Daily  deaths": 4
+  },
+  {
+    "Date": "2020/03/17",
+    "Total Confirmed Cases": "3409",
+    "Total Deaths": "98",
+    "Total Recovered": "1254",
+    "Active Cases": "2057",
+    "Daily Confirmed Cases": "284",
+    "Daily  deaths": 5
+  },
+  {
+    "Date": "2020/03/18",
+    "Total Confirmed Cases": "3802",
+    "Total Deaths": "108",
+    "Total Recovered": "1422",
+    "Active Cases": "2272",
+    "Daily Confirmed Cases": "310",
+    "Daily  deaths": 5
+  },
+  {
+    "Date": "2020/03/19",
+    "Total Confirmed Cases": "4206",
+    "Total Deaths": "118",
+    "Total Recovered": "1598",
+    "Active Cases": "2490",
+    "Daily Confirmed Cases": "337",
+    "Daily  deaths": 5
+  },
+  {
+    "Date": "2020/03/20",
+    "Total Confirmed Cases": "4622",
+    "Total Deaths": "129",
+    "Total Recovered": "1781",
+    "Active Cases": "2712",
+    "Daily Confirmed Cases": "365",
+    "Daily  deaths": 6
+  },
+  {
+    "Date": "2020/03/21",
+    "Total Confirmed Cases": "5048",
+    "Total Deaths": "140",
+    "Total Recovered": "1972",
+    "Active Cases": "2936",
+    "Daily Confirmed Cases": "393",
+    "Daily  deaths": 6
+  },
+  {
+    "Date": "2020/03/22",
+    "Total Confirmed Cases": "5485",
+    "Total Deaths": "151",
+    "Total Recovered": "2169",
+    "Active Cases": "3165",
+    "Daily Confirmed Cases": "421",
+    "Daily  deaths": 7
+  },
+  {
+    "Date": "2020/03/23",
+    "Total Confirmed Cases": "5932",
+    "Total Deaths": "162",
+    "Total Recovered": "2374",
+    "Active Cases": "3396",
+    "Daily Confirmed Cases": "450",
+    "Daily  deaths": 7
+  },
+  {
+    "Date": "2020/03/24",
+    "Total Confirmed Cases": "6388",
+    "Total Deaths": "173",
+    "Total Recovered": "2585",
+    "Active Cases": "3630",
+    "Daily Confirmed Cases": "479",
+    "Daily  deaths": 8
+  },
+  {
+    "Date": "2020/03/25",
+    "Total Confirmed Cases": "6853",
+    "Total Deaths": "184",
+    "Total Recovered": "2803",
+    "Active Cases": "3866",
+    "Daily Confirmed Cases": "508",
+    "Daily  deaths": 8
+  },
+  {
+    "Date": "2020/03/26",
+    "Total Confirmed Cases": "7327",
+    "Total Deaths": "196",
+    "Total Recovered": "3027",
+    "Active Cases": "4104",
+    "Daily Confirmed Cases": "538",
+    "Daily  deaths": 9
+  },
+  {
+    "Date": "2020/03/27",
+    "Total Confirmed Cases": "7810",
+    "Total Deaths": "207",
+    "Total Recovered": "3257",
+    "Active Cases": "4346",
+    "Daily Confirmed Cases": "568",
+    "Daily  deaths": 9
+  },
+  {
+    "Date": "2020/03/28",
+    "Total Confirmed Cases": "8301",
+    "Total Deaths": "219",
+    "Total Recovered": "3494",
+    "Active Cases": "4588",
+    "Daily Confirmed Cases": "598",
+    "Daily  deaths": 10
+  },
+  {
+    "Date": "2020/03/29",
+    "Total Confirmed Cases": "8800",
+    "Total Deaths": "231",
+    "Total Recovered": "3736",
+    "Active Cases": "4833",
+    "Daily Confirmed Cases": "628",
+    "Daily  deaths": 10
+  },
+  {
+    "Date": "2020/03/30",
+    "Total Confirmed Cases": "9308",
+    "Total Deaths": "243",
+    "Total Recovered": "3985",
+    "Active Cases": "5080",
+    "Daily Confirmed Cases": "659",
+    "Daily  deaths": 11
+  },
+  {
+    "Date": "2020/03/31",
+    "Total Confirmed Cases": "9823",
+    "Total Deaths": "255",
+    "Total Recovered": "4239",
+    "Active Cases": "5329",
+    "Daily Confirmed Cases": "690",
+    "Daily  deaths": 12
+  },
+  {
+    "Date": "2020/04/01",
+    "Total Confirmed Cases": "10346",
+    "Total Deaths": "268",
+    "Total Recovered": "4499",
+    "Active Cases": "5579",
+    "Daily Confirmed Cases": "721",
+    "Daily  deaths": 12
+  },
+  {
+    "Date": "2020/04/02",
+    "Total Confirmed Cases": "10876",
+    "Total Deaths": "280",
+    "Total Recovered": "4765",
+    "Active Cases": "5831",
+    "Daily Confirmed Cases": "752",
+    "Daily  deaths": 13
+  },
+  {
+    "Date": "2020/04/03",
+    "Total Confirmed Cases": "11413",
+    "Total Deaths": "293",
+    "Total Recovered": "5036",
+    "Active Cases": "6084",
+    "Daily Confirmed Cases": "784",
+    "Daily  deaths": 13
+  },
+  {
+    "Date": "2020/04/04",
+    "Total Confirmed Cases": "11958",
+    "Total Deaths": "305",
+    "Total Recovered": "5313",
+    "Active Cases": "6340",
+    "Daily Confirmed Cases": "815",
+    "Daily  deaths": 14
+  },
+  {
+    "Date": "2020/04/05",
+    "Total Confirmed Cases": "12509",
+    "Total Deaths": "318",
+    "Total Recovered": "5595",
+    "Active Cases": "6596",
+    "Daily Confirmed Cases": "847",
+    "Daily  deaths": 15
+  },
+  {
+    "Date": "2020/04/06",
+    "Total Confirmed Cases": "13068",
+    "Total Deaths": "331",
+    "Total Recovered": "5883",
+    "Active Cases": "6854",
+    "Daily Confirmed Cases": "880",
+    "Daily  deaths": 15
+  },
+  {
+    "Date": "2020/04/07",
+    "Total Confirmed Cases": "13632",
+    "Total Deaths": "344",
+    "Total Recovered": "6175",
+    "Active Cases": "7113",
+    "Daily Confirmed Cases": "912",
+    "Daily  deaths": 16
+  },
+  {
+    "Date": "2020/04/08",
+    "Total Confirmed Cases": "14204",
+    "Total Deaths": "357",
+    "Total Recovered": "6473",
+    "Active Cases": "7374",
+    "Daily Confirmed Cases": "945",
+    "Daily  deaths": 16
+  },
+  {
+    "Date": "2020/04/09",
+    "Total Confirmed Cases": "14782",
+    "Total Deaths": "370",
+    "Total Recovered": "6776",
+    "Active Cases": "7636",
+    "Daily Confirmed Cases": "977",
+    "Daily  deaths": 17
+  },
+  {
+    "Date": "2020/04/10",
+    "Total Confirmed Cases": "15366",
+    "Total Deaths": "383",
+    "Total Recovered": "7085",
+    "Active Cases": "7898",
+    "Daily Confirmed Cases": "1010",
+    "Daily  deaths": 18
+  },
+  {
+    "Date": "2020/04/11",
+    "Total Confirmed Cases": "15956",
+    "Total Deaths": "396",
+    "Total Recovered": "7398",
+    "Active Cases": "8162",
+    "Daily Confirmed Cases": "1044",
+    "Daily  deaths": 18
+  },
+  {
+    "Date": "2020/04/12",
+    "Total Confirmed Cases": "16553",
+    "Total Deaths": "410",
+    "Total Recovered": "7716",
+    "Active Cases": "8427",
+    "Daily Confirmed Cases": "1077",
+    "Daily  deaths": 19
+  },
+  {
+    "Date": "2020/04/13",
+    "Total Confirmed Cases": "17155",
+    "Total Deaths": "423",
+    "Total Recovered": "8039",
+    "Active Cases": "8693",
+    "Daily Confirmed Cases": "1110",
+    "Daily  deaths": 20
+  },
+  {
+    "Date": "2020/04/14",
+    "Total Confirmed Cases": "17764",
+    "Total Deaths": "437",
+    "Total Recovered": "8367",
+    "Active Cases": "8960",
+    "Daily Confirmed Cases": "1144",
+    "Daily  deaths": 20
+  },
+  {
+    "Date": "2020/04/15",
+    "Total Confirmed Cases": "18378",
+    "Total Deaths": "451",
+    "Total Recovered": "8699",
+    "Active Cases": "9228",
+    "Daily Confirmed Cases": "1178",
+    "Daily  deaths": 21
+  },
+  {
+    "Date": "2020/04/16",
+    "Total Confirmed Cases": "18998",
+    "Total Deaths": "464",
+    "Total Recovered": "9037",
+    "Active Cases": "9497",
+    "Daily Confirmed Cases": "1212",
+    "Daily  deaths": 22
+  },
+  {
+    "Date": "2020/04/17",
+    "Total Confirmed Cases": "19623",
+    "Total Deaths": "478",
+    "Total Recovered": "9379",
+    "Active Cases": "9766",
+    "Daily Confirmed Cases": "1246",
+    "Daily  deaths": 22
+  },
+  {
+    "Date": "2020/04/18",
+    "Total Confirmed Cases": "20254",
+    "Total Deaths": "492",
+    "Total Recovered": "9726",
+    "Active Cases": "10036",
+    "Daily Confirmed Cases": "1281",
+    "Daily  deaths": 23
+  },
+  {
+    "Date": "2020/04/19",
+    "Total Confirmed Cases": "20891",
+    "Total Deaths": "506",
+    "Total Recovered": "10077",
+    "Active Cases": "10308",
+    "Daily Confirmed Cases": "1315",
+    "Daily  deaths": 24
+  },
+  {
+    "Date": "2020/04/20",
+    "Total Confirmed Cases": "21533",
+    "Total Deaths": "520",
+    "Total Recovered": "10433",
+    "Active Cases": "10580",
+    "Daily Confirmed Cases": "1350",
+    "Daily  deaths": 25
+  },
+  {
+    "Date": "2020/04/21",
+    "Total Confirmed Cases": "22180",
+    "Total Deaths": "534",
+    "Total Recovered": "10793",
+    "Active Cases": "10853",
+    "Daily Confirmed Cases": "1385",
+    "Daily  deaths": 25
+  },
+  {
+    "Date": "2020/04/22",
+    "Total Confirmed Cases": "22833",
+    "Total Deaths": "548",
+    "Total Recovered": "11158",
+    "Active Cases": "11127",
+    "Daily Confirmed Cases": "1420",
+    "Daily  deaths": 26
+  },
+  {
+    "Date": "2020/04/23",
+    "Total Confirmed Cases": "23490",
+    "Total Deaths": "563",
+    "Total Recovered": "11527",
+    "Active Cases": "11400",
+    "Daily Confirmed Cases": "1455",
+    "Daily  deaths": 27
+  },
+  {
+    "Date": "2020/04/24",
+    "Total Confirmed Cases": "24153",
+    "Total Deaths": "577",
+    "Total Recovered": "11901",
+    "Active Cases": "11675",
+    "Daily Confirmed Cases": "1490",
+    "Daily  deaths": 28
+  },
+  {
+    "Date": "2020/04/25",
+    "Total Confirmed Cases": "24821",
+    "Total Deaths": "591",
+    "Total Recovered": "12279",
+    "Active Cases": "11951",
+    "Daily Confirmed Cases": "1525",
+    "Daily  deaths": 28
+  },
+  {
+    "Date": "2020/04/26",
+    "Total Confirmed Cases": "25494",
+    "Total Deaths": "606",
+    "Total Recovered": "12661",
+    "Active Cases": "12227",
+    "Daily Confirmed Cases": "1561",
+    "Daily  deaths": 29
+  },
+  {
+    "Date": "2020/04/27",
+    "Total Confirmed Cases": "26172",
+    "Total Deaths": "621",
+    "Total Recovered": "13048",
+    "Active Cases": "12503",
+    "Daily Confirmed Cases": "1597",
+    "Daily  deaths": 30
+  },
+  {
+    "Date": "2020/04/28",
+    "Total Confirmed Cases": "26855",
+    "Total Deaths": "635",
+    "Total Recovered": "13439",
+    "Active Cases": "12781",
+    "Daily Confirmed Cases": "1632",
+    "Daily  deaths": 31
+  },
+  {
+    "Date": "2020/04/29",
+    "Total Confirmed Cases": "27542",
+    "Total Deaths": "650",
+    "Total Recovered": "13834",
+    "Active Cases": "13058",
+    "Daily Confirmed Cases": "1668",
+    "Daily  deaths": 31
+  },
+  {
+    "Date": "2020/04/30",
+    "Total Confirmed Cases": "28234",
+    "Total Deaths": "665",
+    "Total Recovered": "14233",
+    "Active Cases": "13336",
+    "Daily Confirmed Cases": "1704",
+    "Daily  deaths": 32
+  },
+  {
+    "Date": "2020/05/01",
+    "Total Confirmed Cases": "28932",
+    "Total Deaths": "680",
+    "Total Recovered": "14637",
+    "Active Cases": "13615",
+    "Daily Confirmed Cases": "1741",
+    "Daily  deaths": 33
+  },
+  {
+    "Date": "2020/05/02",
+    "Total Confirmed Cases": "29633",
+    "Total Deaths": "694",
+    "Total Recovered": "15045",
+    "Active Cases": "13894",
+    "Daily Confirmed Cases": "1777",
+    "Daily  deaths": 34
+  },
+  {
+    "Date": "2020/05/03",
+    "Total Confirmed Cases": "30339",
+    "Total Deaths": "709",
+    "Total Recovered": "15456",
+    "Active Cases": "14174",
+    "Daily Confirmed Cases": "1813",
+    "Daily  deaths": 34
+  },
+  {
+    "Date": "2020/05/04",
+    "Total Confirmed Cases": "31050",
+    "Total Deaths": "725",
+    "Total Recovered": "15872",
+    "Active Cases": "14453",
+    "Daily Confirmed Cases": "1850",
+    "Daily  deaths": 35
+  },
+  {
+    "Date": "2020/05/05",
+    "Total Confirmed Cases": "31766",
+    "Total Deaths": "740",
+    "Total Recovered": "16292",
+    "Active Cases": "14734",
+    "Daily Confirmed Cases": "1887",
+    "Daily  deaths": 36
+  },
+  {
+    "Date": "2020/05/06",
+    "Total Confirmed Cases": "32486",
+    "Total Deaths": "755",
+    "Total Recovered": "16716",
+    "Active Cases": "15015",
+    "Daily Confirmed Cases": "1923",
+    "Daily  deaths": 37
+  },
+  {
+    "Date": "2020/05/07",
+    "Total Confirmed Cases": "33210",
+    "Total Deaths": "770",
+    "Total Recovered": "17143",
+    "Active Cases": "15297",
+    "Daily Confirmed Cases": "1960",
+    "Daily  deaths": 38
+  },
+  {
+    "Date": "2020/05/08",
+    "Total Confirmed Cases": "33938",
+    "Total Deaths": "785",
+    "Total Recovered": "17575",
+    "Active Cases": "15578",
+    "Daily Confirmed Cases": "1997",
+    "Daily  deaths": 38
+  },
+  {
+    "Date": "2020/05/09",
+    "Total Confirmed Cases": "34671",
+    "Total Deaths": "801",
+    "Total Recovered": "18011",
+    "Active Cases": "15859",
+    "Daily Confirmed Cases": "2035",
+    "Daily  deaths": 39
+  },
+  {
+    "Date": "2020/05/10",
+    "Total Confirmed Cases": "35409",
+    "Total Deaths": "816",
+    "Total Recovered": "18451",
+    "Active Cases": "16142",
+    "Daily Confirmed Cases": "2072",
+    "Daily  deaths": 40
+  },
+  {
+    "Date": "2020/05/11",
+    "Total Confirmed Cases": "36150",
+    "Total Deaths": "832",
+    "Total Recovered": "18894",
+    "Active Cases": "16424",
+    "Daily Confirmed Cases": "2109",
+    "Daily  deaths": 41
+  },
+  {
+    "Date": "2020/05/12",
+    "Total Confirmed Cases": "36896",
+    "Total Deaths": "847",
+    "Total Recovered": "19341",
+    "Active Cases": "16708",
+    "Daily Confirmed Cases": "2147",
+    "Daily  deaths": 42
+  },
+  {
+    "Date": "2020/05/13",
+    "Total Confirmed Cases": "37646",
+    "Total Deaths": "863",
+    "Total Recovered": "19793",
+    "Active Cases": "16990",
+    "Daily Confirmed Cases": "2184",
+    "Daily  deaths": 43
+  },
+  {
+    "Date": "2020/05/14",
+    "Total Confirmed Cases": "38400",
+    "Total Deaths": "878",
+    "Total Recovered": "20248",
+    "Active Cases": "17274",
+    "Daily Confirmed Cases": "2222",
+    "Daily  deaths": 43
+  },
+  {
+    "Date": "2020/05/15",
+    "Total Confirmed Cases": "39158",
+    "Total Deaths": "894",
+    "Total Recovered": "20706",
+    "Active Cases": "17558",
+    "Daily Confirmed Cases": "2260",
+    "Daily  deaths": 44
+  },
+  {
+    "Date": "2020/05/16",
+    "Total Confirmed Cases": "39921",
+    "Total Deaths": "910",
+    "Total Recovered": "21169",
+    "Active Cases": "17842",
+    "Daily Confirmed Cases": "2298",
+    "Daily  deaths": 45
+  },
+  {
+    "Date": "2020/05/17",
+    "Total Confirmed Cases": "40687",
+    "Total Deaths": "926",
+    "Total Recovered": "21635",
+    "Active Cases": "18126",
+    "Daily Confirmed Cases": "2336",
+    "Daily  deaths": 46
+  },
+  {
+    "Date": "2020/05/18",
+    "Total Confirmed Cases": "41457",
+    "Total Deaths": "941",
+    "Total Recovered": "22105",
+    "Active Cases": "18411",
+    "Daily Confirmed Cases": "2374",
+    "Daily  deaths": 47
+  },
+  {
+    "Date": "2020/05/19",
+    "Total Confirmed Cases": "42231",
+    "Total Deaths": "957",
+    "Total Recovered": "22579",
+    "Active Cases": "18695",
+    "Daily Confirmed Cases": "2412",
+    "Daily  deaths": 48
+  },
+  {
+    "Date": "2020/05/20",
+    "Total Confirmed Cases": "43010",
+    "Total Deaths": "973",
+    "Total Recovered": "23056",
+    "Active Cases": "18981",
+    "Daily Confirmed Cases": "2451",
+    "Daily  deaths": 49
+  },
+  {
+    "Date": "2020/05/21",
+    "Total Confirmed Cases": "43792",
+    "Total Deaths": "989",
+    "Total Recovered": "23537",
+    "Active Cases": "19266",
+    "Daily Confirmed Cases": "2489",
+    "Daily  deaths": 50
+  },
+  {
+    "Date": "2020/05/22",
+    "Total Confirmed Cases": "44578",
+    "Total Deaths": "1005",
+    "Total Recovered": "24022",
+    "Active Cases": "19551",
+    "Daily Confirmed Cases": "2528",
+    "Daily  deaths": 50
+  },
+  {
+    "Date": "2020/05/23",
+    "Total Confirmed Cases": "45367",
+    "Total Deaths": "1021",
+    "Total Recovered": "24510",
+    "Active Cases": "19836",
+    "Daily Confirmed Cases": "2566",
+    "Daily  deaths": 51
+  },
+  {
+    "Date": "2020/05/24",
+    "Total Confirmed Cases": "46161",
+    "Total Deaths": "1038",
+    "Total Recovered": "25002",
+    "Active Cases": "20121",
+    "Daily Confirmed Cases": "2605",
+    "Daily  deaths": 52
+  },
+  {
+    "Date": "2020/05/25",
+    "Total Confirmed Cases": "46958",
+    "Total Deaths": "1054",
+    "Total Recovered": "25498",
+    "Active Cases": "20406",
+    "Daily Confirmed Cases": "2644",
+    "Daily  deaths": 53
+  },
+  {
+    "Date": "2020/05/26",
+    "Total Confirmed Cases": "47760",
+    "Total Deaths": "1070",
+    "Total Recovered": "25997",
+    "Active Cases": "20693",
+    "Daily Confirmed Cases": "2683",
+    "Daily  deaths": 54
+  },
+  {
+    "Date": "2020/05/27",
+    "Total Confirmed Cases": "48564",
+    "Total Deaths": "1086",
+    "Total Recovered": "26499",
+    "Active Cases": "20979",
+    "Daily Confirmed Cases": "2722",
+    "Daily  deaths": 55
+  },
+  {
+    "Date": "2020/05/28",
+    "Total Confirmed Cases": "49373",
+    "Total Deaths": "1103",
+    "Total Recovered": "27005",
+    "Active Cases": "21265",
+    "Daily Confirmed Cases": "2761",
+    "Daily  deaths": 56
+  },
+  {
+    "Date": "2020/05/29",
+    "Total Confirmed Cases": "50185",
+    "Total Deaths": "1119",
+    "Total Recovered": "27515",
+    "Active Cases": "21551",
+    "Daily Confirmed Cases": "2800",
+    "Daily  deaths": 57
+  },
+  {
+    "Date": "2020/05/30",
+    "Total Confirmed Cases": "51001",
+    "Total Deaths": "1136",
+    "Total Recovered": "28028",
+    "Active Cases": "21837",
+    "Daily Confirmed Cases": "2840",
+    "Daily  deaths": 58
+  },
+  {
+    "Date": "2020/05/31",
+    "Total Confirmed Cases": "51821",
+    "Total Deaths": "1152",
+    "Total Recovered": "28544",
+    "Active Cases": "22125",
+    "Daily Confirmed Cases": "2879",
+    "Daily  deaths": 59
+  },
+  {
+    "Date": "2020/06/01",
+    "Total Confirmed Cases": "52644",
+    "Total Deaths": "1169",
+    "Total Recovered": "29064",
+    "Active Cases": "22411",
+    "Daily Confirmed Cases": "2919",
+    "Daily  deaths": 60
+  },
+  {
+    "Date": "2020/06/02",
+    "Total Confirmed Cases": "53470",
+    "Total Deaths": "1185",
+    "Total Recovered": "29588",
+    "Active Cases": "22697",
+    "Daily Confirmed Cases": "2958",
+    "Daily  deaths": 60
+  },
+  {
+    "Date": "2020/06/03",
+    "Total Confirmed Cases": "54300",
+    "Total Deaths": "1202",
+    "Total Recovered": "30115",
+    "Active Cases": "22983",
+    "Daily Confirmed Cases": "2998",
+    "Daily  deaths": 61
+  },
+  {
+    "Date": "2020/06/04",
+    "Total Confirmed Cases": "55134",
+    "Total Deaths": "1219",
+    "Total Recovered": "30645",
+    "Active Cases": "23270",
+    "Daily Confirmed Cases": "3038",
+    "Daily  deaths": 62
+  },
+  {
+    "Date": "2020/06/05",
+    "Total Confirmed Cases": "55971",
+    "Total Deaths": "1235",
+    "Total Recovered": "31179",
+    "Active Cases": "23557",
+    "Daily Confirmed Cases": "3078",
+    "Daily  deaths": 63
+  },
+  {
+    "Date": "2020/06/06",
+    "Total Confirmed Cases": "56812",
+    "Total Deaths": "1252",
+    "Total Recovered": "31716",
+    "Active Cases": "23844",
+    "Daily Confirmed Cases": "3118",
+    "Daily  deaths": 64
+  },
+  {
+    "Date": "2020/06/07",
+    "Total Confirmed Cases": "57656",
+    "Total Deaths": "1269",
+    "Total Recovered": "32256",
+    "Active Cases": "24131",
+    "Daily Confirmed Cases": "3158",
+    "Daily  deaths": 65
+  },
+  {
+    "Date": "2020/06/08",
+    "Total Confirmed Cases": "58503",
+    "Total Deaths": "1286",
+    "Total Recovered": "32800",
+    "Active Cases": "24417",
+    "Daily Confirmed Cases": "3198",
+    "Daily  deaths": 66
+  },
+  {
+    "Date": "2020/06/09",
+    "Total Confirmed Cases": "59354",
+    "Total Deaths": "1303",
+    "Total Recovered": "33347",
+    "Active Cases": "24704",
+    "Daily Confirmed Cases": "3238",
+    "Daily  deaths": 67
+  },
+  {
+    "Date": "2020/06/10",
+    "Total Confirmed Cases": "60208",
+    "Total Deaths": "1320",
+    "Total Recovered": "33897",
+    "Active Cases": "24991",
+    "Daily Confirmed Cases": "3278",
+    "Daily  deaths": 68
+  },
+  {
+    "Date": "2020/06/11",
+    "Total Confirmed Cases": "61066",
+    "Total Deaths": "1337",
+    "Total Recovered": "34451",
+    "Active Cases": "25278",
+    "Daily Confirmed Cases": "3319",
+    "Daily  deaths": 69
+  },
+  {
+    "Date": "2020/06/12",
+    "Total Confirmed Cases": "61927",
+    "Total Deaths": "1354",
+    "Total Recovered": "35008",
+    "Active Cases": "25565",
+    "Daily Confirmed Cases": "3359",
+    "Daily  deaths": 70
+  }
+]
